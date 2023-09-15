@@ -68,6 +68,10 @@ const MobileMenu = function mobileMenuFactory(
     // Menu Items
     items.forEach((item) => menu.appendChild(createMenuItem(item)));
 
+    // Active Item
+    const firstItem = [...menu.children][0];
+    firstItem.classList.add('--active');
+
     return menu;
   };
 
