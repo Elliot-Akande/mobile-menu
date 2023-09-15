@@ -21,6 +21,16 @@ const MobileMenu = function mobileMenuFactory(
   ],
   customClass = '',
 ) {
+  const itemPressed = function setMenuItemActive(event) {
+    const item = event.currentTarget;
+    const prevItem = document.querySelector('.men__item.--active');
+
+    if (item === prevItem) return;
+
+    if (prevItem !== null) prevItem.classList.toggle('--active');
+    item.classList.toggle('--active');
+  };
+
   const createMenuItem = (data) => {
     // Item Container
     const item = document.createElement('div');
@@ -39,6 +49,8 @@ const MobileMenu = function mobileMenuFactory(
     title.classList.add('men__title');
     title.textContent = data.title;
     item.appendChild(title);
+
+    item.addEventListener('click', itemPressed);
 
     return item;
   };
