@@ -35,6 +35,7 @@ const MobileMenu = function mobileMenuFactory(
     // Title
     const title = document.createElement('div');
     title.classList.add('men__title');
+    title.textContent = data.title;
     item.appendChild(title);
 
     return item;
