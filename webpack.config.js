@@ -9,6 +9,7 @@ const config = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
+    libraryTarget: 'umd',
   },
   devServer: {
     open: true,
