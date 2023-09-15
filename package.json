@@ -1,0 +1,23 @@
+{
+  "name": "mobile-menu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elliot-Akande/mobile-menu.git"
+  },
+  "author": "Elliot Akande",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Elliot-Akande/mobile-menu/issues"
+  },
+  "homepage": "https://github.com/Elliot-Akande/mobile-menu#readme",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
