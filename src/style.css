@@ -44,5 +44,15 @@
   white-space: nowrap;
 }
 
+/* Item Active */
+.men__item.--active {
+  padding-bottom: calc(var(--padding-y) - 8px);
+  border-bottom: 8px solid var(--colour-grey-d);
+}
+
+/* Title Active */
+.men__item.--active .men__title {
+  color: var(--colour-grey-d);
+  font-weight: bold;
 }
 
