@@ -1,0 +1,50 @@
+:root {
+  --colour-grey-50: #f9fafb;
+  --colour-grey-100: #f3f4f6;
+  --colour-grey-200: #e5e7eb;
+  --colour-grey-300: #d1d5db;
+  --colour-grey-400: #9ca3af;
+  --colour-grey-500: #6b7280;
+  --colour-grey-600: #4b5563;
+  --colour-grey-700: #374151;
+  --colour-grey-800: #1f2937;
+  --colour-grey-900: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Menu Defaults */
+.men {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+
+  background: var(--colour-grey-100);
+
+  font-size: 1rem;
+}
+
+/* Item Defaults */
+.men__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* min-height: 40px;
+  min-width: 80px; */
+  padding: 12px 20px;
+}
+
+/* Title Defaults */
+.men__title {
+  color: var(--colour-grey-500);
+
+  font-size: 1rem;
+  font-family: inherit;
+}
+
