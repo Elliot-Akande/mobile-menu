@@ -23,7 +23,7 @@ const MobileMenu = function mobileMenuFactory(
 ) {
   const itemPressed = function setMenuItemActive(event) {
     const item = event.currentTarget;
-    const prevItem = document.querySelector('.men__item.--active');
+    const prevItem = item.parentElement.querySelector('.men__item.--active');
 
     if (item === prevItem) return;
 
