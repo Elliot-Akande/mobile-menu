@@ -1,3 +1,5 @@
+import './style.css';
+
 const MobileMenu = function mobileMenuFactory(
   items = [
     {
