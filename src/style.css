@@ -2,6 +2,9 @@
   --colour-grey-l: #f9fafb;
   --colour-grey-m: #6b7280;
   --colour-grey-d: #1f2937;
+
+  --padding-y: 14px;
+  --padding-x: 20px;
 }
 
 * {
