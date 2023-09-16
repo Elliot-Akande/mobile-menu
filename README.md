@@ -1,10 +1,10 @@
 # @akande/mobile-menu
 
-`@akande/mobile-menu` is a flexible and lightweight JavaScript solution for creating mobile menus in web apps. It provides easy integration and styling options, allowing you to customize menus with your own data and callbacks for a seamless user experience.
+`@akande/mobile-menu` is a flexible and lightweight JavaScript solution for creating mobile menus in web apps. It provides easy integration and styling options, allowing you to customize menus with your own data, including optional icons, and callbacks for a seamless user experience.
 
 ## Features
 
-- **Customizable Menu Items:** Tailor your mobile menu with custom titles and list items to suit your application's needs.
+- **Customizable Menu Items:** Tailor your mobile menu with custom titles and optional icons to suit your application's needs.
 
 - **Optional Callbacks:** Supports optional callback functions for menu item selection, allowing you to add interactivity and functionality.
 
@@ -38,6 +38,7 @@ const menu = MobileMenu(
   [
     {
       title: 'Item 1',
+      icon: mySvg, // Optional icon svg element
       callback: () => {
         // Callback for Item 1
       },
@@ -59,6 +60,7 @@ Creates an instance of the MobileMenu component.
 
 - `menuItems` (Array of Objects): An array of menu item objects. Each object should have the following properties:
   - `title` (String): The text to display for the menu item.
+  - `icon` (SVG Element, optional): An optional icon to display alongside the menu item.
   - `callback` (Function, optional): An optional callback function to execute when the menu item is clicked.
 - `customClass` (String, optional): An optional custom CSS class to apply to the menu container.
 
