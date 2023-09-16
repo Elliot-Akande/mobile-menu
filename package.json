@@ -1,6 +1,6 @@
 {
   "name": "@akande/mobile-menu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A customizable menu designed for mobile web applications",
   "main": "dist/main.js",
   "scripts": {
