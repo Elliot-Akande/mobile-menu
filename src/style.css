@@ -26,8 +26,9 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  height: 6vh;
-  padding-bottom: 3px;
+  min-height: 6vh;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 /* Title Defaults */
@@ -38,14 +39,26 @@
   white-space: nowrap;
 }
 
+/* Icon Defaults */
+.men__icon {
+  fill: var(--colour-grey-m);
+  height: auto;
+  width: 22px;
+}
+
 /* Item Active */
-.men__item.--active {
-  padding-bottom: 0;
+.men__item--no-icon.men__item--active {
+  padding-bottom: 3px;
   border-bottom: 3px solid var(--colour-grey-d);
 }
 
 /* Title Active */
-.men__item.--active .men__title {
+.men__item--active .men__title {
   color: var(--colour-grey-d);
   font-weight: bold;
+}
+
+/* Icon Active */
+.men__item--active .men__icon {
+  fill: var(--colour-grey-d);
 }
