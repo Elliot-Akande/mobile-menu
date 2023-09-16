@@ -27,7 +27,7 @@
   justify-content: center;
   flex: 1;
   height: 6vh;
-  padding: 14px 0;
+  padding-bottom: 3px;
 }
 
 /* Title Defaults */
@@ -40,7 +40,7 @@
 
 /* Item Active */
 .men__item.--active {
-  padding-bottom: calc(14px - 3px);
+  padding-bottom: 0;
   border-bottom: 3px solid var(--colour-grey-d);
 }
 
