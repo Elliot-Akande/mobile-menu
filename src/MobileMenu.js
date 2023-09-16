@@ -23,12 +23,12 @@ const MobileMenu = function mobileMenuFactory(
 ) {
   const itemPressed = function setMenuItemActive(event) {
     const item = event.currentTarget;
-    const prevItem = item.parentElement.querySelector('.men__item.--active');
+    const prevItem = item.parentElement.querySelector('.men__item--active');
 
     if (item === prevItem) return;
 
-    if (prevItem !== null) prevItem.classList.toggle('--active');
-    item.classList.toggle('--active');
+    if (prevItem !== null) prevItem.classList.toggle('men__item--active');
+    item.classList.toggle('men__item--active');
   };
 
   const createMenuItem = (data) => {
@@ -44,7 +44,7 @@ const MobileMenu = function mobileMenuFactory(
       const { icon } = data;
       icon.classList.add('men__icon');
       item.appendChild(icon);
-    }
+    } else item.classList.add('men__item--no-icon');
 
     // Title
     const title = document.createElement('div');
@@ -72,7 +72,7 @@ const MobileMenu = function mobileMenuFactory(
 
     // Active Item
     const firstItem = [...menu.children][0];
-    firstItem.classList.add('--active');
+    firstItem.classList.add('men__item--active');
 
     return menu;
   };
