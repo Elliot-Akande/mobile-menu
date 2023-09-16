@@ -5,15 +5,10 @@
 ## Features
 
 - **Customizable Menu Items:** Tailor your mobile menu with custom titles and optional icons to suit your application's needs.
-
 - **Optional Callbacks:** Supports optional callback functions for menu item selection, allowing you to add interactivity and functionality.
-
 - **Minimal Styling:** Comes with minimal default styling, providing a clean canvas for you to style the menu according to your project's design.
-
 - **Lightweight:** A lightweight solution that won't bloat your application, ensuring optimal performance.
-
 - **Highly Configurable:** Offers configuration options for custom CSS classes, enabling you to match the menu's appearance to your application's branding.
-
 - **Open Source:** Licensed under the MIT License, giving you the freedom to use and modify it in your projects.
 
 ## Installation
