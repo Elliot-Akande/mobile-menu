@@ -40,9 +40,11 @@ const MobileMenu = function mobileMenuFactory(
     }
 
     // Icon
-    const icon = document.createElement('div');
-    icon.classList.add('men__icon');
-    item.appendChild(icon);
+    if (Object.prototype.hasOwnProperty.call(data, 'icon')) {
+      const { icon } = data;
+      icon.classList.add('men__icon');
+      item.appendChild(icon);
+    }
 
     // Title
     const title = document.createElement('div');
